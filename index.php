@@ -1,5 +1,11 @@
 <?php
 
-require __DIR__ . '/vendor/autoload.php';
+use App\App;
 
-echo 'Hello world!';
+define('APP_PATH', __DIR__);
+
+require_once APP_PATH . '/vendor/autoload.php';
+
+$app = new App();
+
+$app->run();
