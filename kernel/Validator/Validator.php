@@ -2,7 +2,9 @@
 
 namespace App\Kernel\Validator;
 
-class Validator
+use App\Kernel\View\ViewInterface;
+
+class Validator implements ValidatorInterface
 {
     private array $errors = [];
 
