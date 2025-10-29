@@ -8,9 +8,5 @@
 
 <!doctype html>
 <html lang="en">
-
 <?php $view->component('head'); ?>
-
 <body class="d-flex flex-column min-vh-100">
-
-<?php $view->component('header'); ?>
