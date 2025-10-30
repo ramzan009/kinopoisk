@@ -6,14 +6,12 @@ use App\Kernel\Controller\Controller;
 use App\Kernel\View\View;
 use App\Services\CategoryService;
 
-class AdminController extends Controller
+class MovieController extends Controller
 {
-    public function index(): void
+    public function create(): void
     {
         $categories = new CategoryService($this->db());
 
-        $this->view('admin/index', [
-            'categories' => $categories->all(),
-        ]);
+        $this->view('admin/movies/add', ['categories' => $categories->all()]);
     }
 }
