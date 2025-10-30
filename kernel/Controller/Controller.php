@@ -29,9 +29,9 @@ abstract class Controller
 
     private StorageInterface $storage;
 
-    public function view(string $view): void
+    public function view(string $view, array $data = []): void
     {
-        $this->view->page($view);
+        $this->view->page($view, $data);
     }
 
     public function setView(ViewInterface $view): void
